@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Knotty Pie</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+       <link rel="stylesheet" href="styles.css">
+   </head>
+   <body style=“margin:20px">
+       <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+       <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+       <script src="app.js"></script>
+
+       <h1>Knotty Pie (Charts)</h1>
+        <div class="ui grid">
+                <div class="five wide column">
+                <h3 class="align-center">Proofs Sent by Day</h3>
+                 <canvas id="proofsSentByDay"></canvas>
+                  <div id="legendProofsSentByDay" class="chartLegend"></div>
+                </div>
+                <div class="five wide column">
+                <h3 class="align-center">Proofs Sent by Designer</h3>
+                 <canvas id="proofsSentByDesigner"></canvas>
+                 <div id="legendProofsSentByDesigner" class="chartLegend"></div>
+                </div>
+                <div class="five wide column">
+                <h3 class="align-center">Proofs Sent by Pipeline</h3>
+                <canvas id="proofsSentByPipeline"></canvas>
+                <div id="legendProofsSentByPipeline" class="chartLegend"></div>
+                </div>    
+       </div>
+   </body>
+</html>
